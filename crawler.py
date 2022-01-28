@@ -27,7 +27,7 @@ from cassandra.cqlengine import connection
 
 # Créé une url
 def url_builder(city_id,city_name,country):
-    user_api = 'f2573f2c32c60b5915dbcaba22fbbbb8'  # Obtain yours form: http://openweathermap.org/
+    user_api = 'Your API User'  # Obtain yours form: http://openweathermap.org/
     unit = 'metric'  # For Fahrenheit use imperial, for Celsius use metric, and the default is Kelvin.
     if(city_name!=""):
         api = 'http://api.openweathermap.org/data/2.5/weather?q=' # "http://api.openweathermap.org/data/2.5/weather?q=Tunis,fr
@@ -94,7 +94,7 @@ def pandas_factory(colnames, rows):
 def connection():
     
             #auth_provider = PlainTextAuthProvider(username='cassandra', password='cassandra')
-            CASSANDRA_HOST= ['20.73.140.118'] 
+            CASSANDRA_HOST= ['Your IP Addresse'] 
             CASSANDRA_PORT=9042
           
             try:
