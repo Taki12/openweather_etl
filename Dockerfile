@@ -10,3 +10,4 @@ RUN pip install -r requirements.txt
 CMD ["python","./crawler.py"]
 # When the container starts, run this
 ENTRYPOINT python ./crawler.py
+EXPOSE 80
